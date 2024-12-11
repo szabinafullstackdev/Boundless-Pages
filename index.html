@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boundless Pages &nbsp; <i style="font-size:24px" class="fa">&#xf186;</i></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        .card {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .card-body {
+            flex: 1;
+        }
+
+        .card img {
+            object-fit: cover;
+        }
+
+        .navbar-brand {
+            color:honeydew;
+        }
+
+        .nav-link {
+            color:honeydew;
+        }
+
+       
+    </style>
+</head>
+
+<body>
+    <header class="bg-header py-3">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <i style="font-size:24px" class="fa">&#xf186;</i> Boundless Pages
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="categories.html">Categories</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                    <form class="d-flex me-3" action="#" method="get">
+                        <input class="form-control me-2" type="search" placeholder="Search..." name="q">
+                        <button class="btn" type="submit">Search</button>
+                    </form>
+                    <div class="social-media d-flex">
+                        <a href="https://facebook.com" target="_blank" class="social-icon me-2"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com" target="_blank" class="social-icon me-2"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com" target="_blank" class="social-icon me-2"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://youtube.com" target="_blank" class="social-icon"><i
+                                class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="banner-slider" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/Balogh másolat.jpg" class="d-block w-100" alt="Banner 1">
+            </div>
+            <div class="carousel-item">
+                <img src="img/BOUNDLES PAGESbanner.jpg" alt="Banner 2">
+            </div>
+            <!-- Add more slides as needed -->
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#banner-slider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#banner-slider" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </section>
+
+    <div class="container text-center my-5">
+
+        <h2><i style="font-size:24px" class="fa">&#xf186;</i> &nbsp; Step into a world of cultural and intellectual
+            discoverys &nbsp; <i style="font-size:24px" class="fa">&#xf186;</i></h2>
+    </div>
+
+    <main class="container">
+        <section id="news-slider" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="img/Képernyőfotó 2024-08-20 - 15.10.39.png" class="card-img-top" alt="News 1">
+                                <div class="card-body">
+                                    <h5 class="card-title"><b>What Is Stoicism?</b></h5>
+                                    <p class="card-text">Stoicism has been a common thread through history’s great
+                                        leaders...</p>
+                                    <button class="button-89" role="button">Read More</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="img/e8bf1410e01b1890e9f6268632f1f02c.jpg" class="card-img-top" alt="News 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Italian Classicism in Architecture</h5>
+                                    <p class="card-text">It has fallen into complete disrepair. Architecture
+                                        develops.....</p>
+                                    <button class="button-89" role="button">Read More</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="img/2ba0e8b0eb1269ba9a7f693174790b3c.jpg" class="card-img-top" alt="News 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Reading Habits in 1950</h5>
+                                    <p class="card-text">The post-World War II era was characterized by significant....
+                                    </p>
+                                    <button class="button-89" role="button">Read More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="img/0ba6af1c93f0a0ef8e5a80b67fd834ba.jpg" class="card-img-top" alt="News 4">
+                                <div class="card-body">
+                                    <h5 class="card-title">How to Make Time for Reading with a Baby?</h5>
+                                    <p class="card-text">Finding time to read can be challenging, especially when.....
+                                    </p>
+                                    <button class="button-89" role="button">Read More</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="img/f4cc5adf742d1f92199f1437448c997c.jpg" class="card-img-top" alt="News 5">
+                                <div class="card-body">
+                                    <h5 class="card-title">When Should You Introduce Your Children to the World of
+                                        Reading?</h5>
+                                    <p class="card-text">As your child enters the toddler stage, their interest.....
+                                    </p>
+                                    <button class="button-89" role="button">Read More</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="img/22d2c228cb7a524bba4356dc62029808.jpg" class="card-img-top" alt="News 6">
+                                <div class="card-body">
+                                    <h5 class="card-title">New vs. Used: What’s the Best Choice for Next Book Purchase?
+                                    </h5>
+                                    <p class="card-text">When it comes to buying books, one of the first decision.....
+                                    </p>
+                                    <button class="button-89" role="button">Read More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#news-slider" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#news-slider" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </section>
+        <section class="stepinto">
+            <div class="caption-container-2 text-center my-5">
+
+                <h2><i style="font-size:24px" class="fa">&#xf186;</i> &nbsp;
+                    Let’s discover the latest buzz in the cultural world... &nbsp; <i style="font-size:24px"
+                        class="fa">&#xf186;</i></h2>
+            </div>
+
+            <section class="featured-posts">
+                <div class="row">
+                    <div class="col-md-4">
+                        <article class="post card">
+                            <img src="img/9780141392219-jacket-large.jpg" class="card-img-top" alt="Featured Book 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Auschwitz: A Doctor's Eyewitness Account by Dr.</h5>
+                                <p class="card-text">In Auschwitz: A Doctor's Eyewitness Account, Dr. Miklós Nyiszli
+                                    provides a chilling firsthand account of his time as a Jewish doctor in Auschwitz.
+                                    Forced to work under the infamous
+                                    Dr. Josef Mengele, Nyiszli witnessed unimaginable horrors. His memoir is not only a
+                                    record.....</p>
+                                <button class="button-89" role="button">Read More</button>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-4">
+                        <article class="post card">
+                            <img src="img/woices.jpeg" class="card-img-top" alt="Featured Book 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Voices from Chernobyl by Svetlana Alexievich</h5>
+                                <p class="card-text">Svetlana Alexievich’s Voices from Chernobyl offers a haunting oral
+                                    history of the 1986
+                                    Chernobyl nuclear disaster. Through interviews with survivors, first responders, and
+                                    residents of the surrounding areas, Alexievich creates a mosaic of human suffering
+                                    ....
+                                </p>
+                                <button class="button-89" role="button">Read More</button>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-4">
+                        <article class="post card">
+                            <img src="img/9722222280552172899.jpeg" class="card-img-top" alt="Featured Book 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Midnight in Chernobyl by Adam Higginbotham</h5>
+                                <p class="card-text">Adam Higginbotham’s Midnight in Chernobyl is a meticulously
+                                    researched
+                                    narrative of the
+                                    Chernobyl disaster. The book combines scientific detail with the personal stories of
+                                    those
+                                    involved, from plant workers to government officials. Higginbotham explores the
+                                    Soviet
+                                    ....
+                                </p>
+                                <button class="button-89" role="button">Read More</button>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-4">
+                        <article class="post card">
+                            <img src="img/446779-0öööö.jpeg" class="card-img-top" alt="Featured Book4">
+                            <div class="card-body">
+                                <h5 class="card-title">Chernobyl Prayer: A Chronicle of the Future</h5>
+                                <p class="card-text">Also known as Voices from Chernobyl, this book by Svetlana
+                                    Alexievich
+                                    is a compilation of
+                                    interviews with people affected by the Chernobyl disaster. The title Chernobyl
+                                    Prayer
+                                    reflects the spiritual and existential dimensions of the tragedy. The book captures
+                                    the....
+                                </p>
+                                <button class="button-89" role="button">Read More</button>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-4">
+                        <article class="post card">
+                            <img src="img/i__id11896_mw600__1xxx.jpeg" class="card-img-top" alt="Featured Book 5">
+                            <div class="card-body">
+                                <h5 class="card-title">The Chernobyl Herbarium by Michael Marder</h5>
+                                <p class="card-text">The Chernobyl Herbarium is a unique exploration of the Chernobyl
+                                    disaster, blending art,
+                                    philosophy, and environmental science. Michael Marder and Anaïs Tondeur create a
+                                    dialogue
+                                    between text and image, reflecting on the ecological and philosophical
+                                    ....
+                                </p>
+                                <button class="button-89" role="button">Read More</button>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-4">
+                        <article class="post card">
+                            <img src="img/41jRi6ONopL._SY780_.jpg" class="card-img-top" alt="Featured Book 6">
+                            <div class="card-body">
+                                <h5 class="card-title">Survival in Auschwitz by Primo Levi</h5>
+                                <p class="card-text">Survival in Auschwitz (originally titled If This Is a Man) is Primo
+                                    Levi’s harrowing account
+                                    of his time in the Auschwitz concentration camp. Levi, an Italian Jew, survived the
+                                    camp
+                                    and
+                                    later documented the dehumanizing experiences he endured. His
+                                    ....
+                                </p>
+                                <button class="button-89" role="button">Read More</button>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+    </main>
+
+    <footer class="bg-footer py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Boundless Pages. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

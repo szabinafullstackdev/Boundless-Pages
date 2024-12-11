@@ -1,0 +1,401 @@
+/* General Styles */
+body {
+    font-family: 'Papyrus', 'Comic Sans MS', cursive;
+    background-color: #f4f4f4;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #69573b;
+    color: #fff;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+
+.logo h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.search-bar form {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.search-bar button {
+    padding: 8px 16px;
+    background-color: #69573b;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #000000;
+}
+
+.social-media {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.social-icon:hover {
+    color: #000000;
+}
+
+/* Banner Slider Styles */
+.banner-slider {
+    position: relative;
+    max-width: 80%;
+    height: 700px;
+    /* Csökkentett magasság */
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    /* Kép illesztése a csökkentett banner magassághoz */
+}
+
+.controls {
+    position: absolute;
+    top: 50%;
+    /* Gombok függőleges középre helyezése */
+    transform: translateY(-50%);
+    /* Gombok középre igazítása függőlegesen */
+    display: flex;
+    justify-content: space-between;
+    /* Gombok elhelyezése a széleken */
+    width: 100%;
+    pointer-events: none;
+    /* Az események átengedése a háttérben lévő elemekre */
+}
+
+.news-controls {
+    position: absolute;
+    top: 23%;
+    /* Gombok függőleges középre helyezése */
+    transform: translateY(-50%);
+    /* Gombok középre igazítása függőlegesen */
+    display: flex;
+    justify-content: space-between;
+    /* Gombok elhelyezése a széleken */
+    width: 100%;
+    pointer-events: none;
+    /* Az események átengedése a háttérben lévő elemekre */
+}
+
+.featured-controls {
+    position: absolute;
+    top: 50%;
+    /* Gombok függőleges középre helyezése */
+    transform: translateY(-50%);
+    /* Gombok középre igazítása függőlegesen */
+    display: flex;
+    justify-content: space-between;
+    /* Gombok elhelyezése a széleken */
+    width: 100%;
+    pointer-events: none;
+    /* Az események átengedése a háttérben lévő elemekre */
+}
+
+.control-btn {
+    pointer-events: all;
+    /* Az események újra aktiválása a gombokra */
+    cursor: pointer;
+    padding: 16px;
+    background-color: rgba(109, 92, 61, 0.5);
+    color: #fff;
+    font-size: 18px;
+    border-radius: 50%;
+    user-select: none;
+}
+
+.control-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+#slide1:checked~.slides {
+    transform: translateX(0%);
+}
+
+#slide2:checked~.slides {
+    transform: translateX(-100%);
+}
+
+#slide3:checked~.slides {
+    transform: translateX(-200%);
+}
+
+#slide4:checked~.slides {
+    transform: translateX(-300%);
+}
+
+#slide5:checked~.slides {
+    transform: translateX(-400%);
+}
+
+#slide6:checked~.slides {
+    transform: translateX(-500%);
+}
+
+/* News Slider Styles */
+.news-slider {
+    position: relative;
+    margin: 13px auto;
+    overflow: hidden;
+}
+
+.news-items {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.news-set {
+    display: flex;
+    min-width: 100%;
+}
+
+.news-item {
+    width: 33.333%;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Középre igazítja a tartalmat */
+}
+
+.news-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+#news1:checked~.news-items {
+    transform: translateX(0%);
+}
+
+#news2:checked~.news-items {
+    transform: translateX(-100%);
+}
+
+#news3:checked~.news-items {
+    transform: translateX(-200%);
+}
+
+.news-box {
+    position: relative;
+    /* Ahhoz, hogy a nyilakat pozicionálhassuk */
+}
+
+.arrow {
+    position: absolute;
+    /* Az abszolút pozicionáláshoz */
+    top: 50%;
+    /* Függőleges középre igazítás */
+    transform: translateY(-50%);
+    /* Igazítás finomhangolása */
+    cursor: pointer;
+    /* Mutató, ha a nyíl fölé viszi az egeret */
+}
+
+.arrow.left {
+    left: 10px;
+    /* Nyíl pozicionálása a bal oldalon */
+}
+
+.arrow.right {
+    right: 10px;
+    /* Nyíl pozicionálása a jobb oldalon */
+}
+
+/* Featured Books Slider Styles */
+.featured-posts {
+    position: relative;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.featured-items {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.featured-set {
+    display: flex;
+    min-width: 100%;
+}
+
+.post {
+    flex: 1 1 33.333%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #fff;
+    margin-right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Középre igazítja a tartalmat */
+}
+
+.post img {
+    width: auto;
+    /* Megtartja az eredeti arányokat */
+    height: 300px;
+    /* Fix magasságot állít be */
+    display: block;
+    /* A margin működéséhez */
+    margin: 0 auto 10px;
+    /* Középre helyezés */
+}
+
+.post h2 {
+    font-size: 18px;
+    margin: 10px 0;
+    /* Alapértelmezett margó */
+    text-align: left;
+    /* Balra igazítás */
+}
+
+.post p {
+    font-size: 16px;
+    line-height: 1.2;
+    margin: 0 0 10px;
+}
+
+#featured1:checked~.featured-items {
+    transform: translateX(0%);
+}
+
+#featured2:checked~.featured-items {
+    transform: translateX(-100%);
+}
+
+#featured3:checked~.featured-items {
+    transform: translateX(-200%);
+}
+
+/* General Styles for Main Content */
+.caption-container {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.caption-container h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #69573b;
+}
+
+.caption-container p {
+    font-size: 20px;
+    color: #83550a;
+}
+
+.caption-container-2 {
+    text-align: center;
+    margin: 60px 0;
+}
+
+.caption-container-2 h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #69573b;
+}
+
+.caption-container-2 p {
+    font-size: 20px;
+    color: #83550a;
+}
+
+main {
+    padding: 50px;
+}
+
+footer {
+    background-color: #69573b;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* More Button Styles */
+.more-btn {
+    text-align: center;
+    /* Középre igazítja a szöveget */
+    margin-top: auto;
+    /* A box aljára helyezi */
+    padding: 10px;
+    background-color: #69573b;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.more-btn:hover {
+    background-color: #000000;
+} 

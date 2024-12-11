@@ -1,0 +1,379 @@
+/* General Styles */
+body {
+    font-family: 'Papyrus', 'Comic Sans MS', cursive;
+    background-color: #ffffff;
+    /* Set background color for entire page */
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+.bg-header {
+    background-color: #69573b;
+    color: #fff;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.search-bar form {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.search-bar button {
+    padding: 8px 16px;
+    background-color: #69573b;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #000000;
+}
+
+.social-media {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.social-icon:hover {
+    color: #000000;
+}
+
+/* Banner Slider Styles */
+.banner-slider {
+    position: relative;
+    max-width: 40%;
+    height: 200px;
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black;
+}
+
+/* Caption Styles */
+
+.container h2 {
+    color: #69573b;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    font-size: 28px;
+}
+
+
+.caption-container {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.caption-container h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    color: #69573b;
+}
+
+.caption-container p {
+    font-size: 20px;
+    color: #83550a;
+}
+
+.caption-container-2 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.caption-container-2 h2 {
+    font-size: 28px;
+    margin-bottom: 100px;
+    margin-top: 100;
+    color: #69573b;
+}
+
+.caption-container-2 p {
+    font-size: 20px;
+    color: #83550a;
+}
+
+/* News Slider Styles */
+.news-slider {
+    position: relative;
+    margin: 13px auto;
+    overflow: hidden;
+}
+
+.news-items {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.news-set {
+    display: flex;
+    min-width: 100%;
+}
+
+.news-item {
+    width: 33.333%;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.news-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.arrow.left {
+    left: 10px;
+}
+
+.arrow.right {
+    right: 10px;
+}
+
+/* Featured Books Slider Styles */
+.featured-posts {
+    position: relative;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.featured-items {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.featured-set {
+    display: flex;
+    min-width: 100%;
+}
+
+.post {
+    flex: 1 1 33.333%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #fff;
+    margin-right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.post img {
+    width: auto;
+    height: 300px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.post h2 {
+    font-size: 18px;
+    margin: 10px 0;
+    text-align: left;
+    font-weight: 900;
+}
+
+.post p {
+    font-size: 16px;
+    line-height: 1.2;
+    margin: 0 0 10px;
+
+}
+
+#featured1:checked~.featured-items {
+    transform: translateX(0%);
+}
+
+#featured2:checked~.featured-items {
+    transform: translateX(-100%);
+}
+
+#featured3:checked~.featured-items {
+    transform: translateX(-200%);
+}
+
+/* General Styles for Main Content */
+main {
+    padding: 50px;
+}
+
+footer {
+    background-color: #69573b;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* More Button Styles */
+.more-btn {
+    text-align: center;
+    margin-top: auto;
+    padding: 10px;
+    background-color: #69573b;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.more-btn:hover {
+    background-color: #000000;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body .btn {
+    margin-top: auto;
+}
+
+
+/* CSS */
+.button-89 {
+    --b: 3px;
+    /* border thickness */
+    --s: .45em;
+    /* size of the corner */
+    --color: #373B44;
+
+    padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+    color: var(--color);
+    --_p: var(--s);
+    background:
+        conic-gradient(from 90deg at var(--b) var(--b), #0000 90deg, var(--color) 0) var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+    transition: .3s linear, color 0s, background-color 0s;
+    outline: var(--b) solid #0000;
+    outline-offset: .6em;
+    font-size: 16px;
+
+    border: 0;
+
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-89:hover,
+.button-89:focus-visible {
+    --_p: 0px;
+    outline-color: var(--color);
+    outline-offset: .05em;
+}
+
+.button-89:active {
+    background: var(--color);
+    color: #fff;
+}
+
+.col-md-4 {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 20px;
+
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.col-md-4:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    color: #69573b;
+    font-weight: 1000;
+    /* This makes the text very bold */
+    margin-bottom: 30px;
+}
+
+.card-text {
+    color: #000000e3;
+}
+
+.carousel-item img {
+    max-height: 800px;
+    /* Változtasd meg a kívánt maximális magasságra */
+    width: 100%;
+    object-fit: contain;
+}
